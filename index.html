@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King Wings Menu Digital</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>🍗 KING WINGS 🍖</header>
+<div class="menu-title">!El Sabor Se Vive A Lo Loco!</div>
+<div class="menu-title">!MENU DIGITAL!</div>
+
+<div class="menu">
+    <!-- Secciones de comida -->
+    <div class="item" onclick="abrirModal('alitas')">
+        <img src="img/alitas.jpg" alt="Alitas">
+        <span>Alitas</span>
+    </div>
+    <div class="item" onclick="abrirModal('costillas')">
+        <img src="img/costillas.avif" alt="Costillas">
+        <span>Costillas</span>
+    </div>
+    <div class="item" onclick="abrirModal('costialitas')">
+        <img src="img/costialitas.webp" alt="Costi-Alitas">
+        <span>Costi-Alitas</span>
+    </div>
+    <div class="item" onclick="abrirModal('chuleta')">
+        <img src="img/chuleta.avif" alt="Chuleta">
+        <span>Chuleta</span>
+    </div>
+    <div class="item" onclick="abrirModal('salchipapas')">
+        <img src="img/salchipapas.jpg" alt="Salchipapas">
+        <span>Salchipapas</span>
+    </div>
+    <div class="item" onclick="abrirModal('bebidas')">
+        <img src="img/bebidas.jpg" alt="Bebidas">
+        <span>Bebidas</span>
+    </div>
+</div>
+
+<!-- Modal productos -->
+<div id="modal">
+  <div class="modal-box">
+    <h2 id="modalTitulo">Selecciona tu pedido</h2>
+    <div id="modalProductos"></div>
+    <button class="btn-cerrar-modal" onclick="cerrarModal()">Cerrar</button>
+  </div>
+</div>
+
+<!-- Carrito -->
+<div class="carrito">
+    <h2>Tu Pedido</h2>
+    <ul id="lista"></ul>
+    <p id="total">TOTAL: $0</p>
+    <input type="text" id="nombreCliente" placeholder="Nombre">
+    <input type="text" id="direccionCliente" placeholder="Dirección">
+    <input type="text" id="telefonoCliente" placeholder="Teléfono">
+    <select id="pagoCliente">
+        <option value="efectivo">💵 Efectivo</option>
+        <option value="transferencia">🏦 Transferencia (Nequi 3174230522)</option>
+    </select>
+    <button class="btn-enviar" onclick="enviar()">Enviar Pedido a WhatsApp</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
