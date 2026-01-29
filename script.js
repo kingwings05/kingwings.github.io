@@ -1,6 +1,6 @@
 let carrito = [], total = 0;
 const SALSAS_GRATIS = 2, RECARGO_SALSA = 1500;
-const DOMICILIO = 5000;
+const DOMICILIO = 6000;
 
 // Lista de salsas
 const salsas = [
@@ -189,4 +189,5 @@ function enviar(){
 
   window.open("https://wa.me/573108987237?text="+encodeURIComponent(msg), "_blank");
 }
+
 
